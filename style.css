@@ -1,0 +1,258 @@
+/* GENERAL EFFECTS */
+
+body {
+    font-family: Arial, Helvetica, san-serif;
+    background-color: white;
+    color: black;
+}
+.nav-flex-container {
+    display: flex;
+    flex-direction: space-between;
+    padding: 10px;
+    position: fixed; 
+    width: 100%;
+    left: 0px;
+    top: 0px;
+}
+.nav-flex-container a {
+    color: inherit;
+    text-decoration: none;
+}
+.nav-flex-child-1 {
+    flex-grow: 1; 
+    display: flex; 
+    align-items: center;
+}
+.nav-flex-child-2 {
+    flex-grow: 1; 
+    padding-right: 15px;
+    align-items: center;
+}
+/* NAV BAR LINKS */
+.left-nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+.right-nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: right;
+}
+.nav-flex-container li {
+    display: inline-block;
+    padding: 5px;
+    margin: 0;
+    color: gray;
+    font-size: 14px;
+}
+.nav-flex-container li:hover {
+    text-decoration: underline;
+}
+#menu {
+  height: 15px;
+  width: auto;
+  margin-top: 5px;
+}
+#Sign-In {
+  background-color: #4387fd;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 2px;
+  
+  
+}
+/*
+.square-icon {
+    width: 5%;
+    height: auto;
+}
+*/
+/* GRID BOX CONTAINER */
+
+.grid-box-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 2fr 1fr 1fr 1fr;
+  
+  gap: 20px; /* spacing between the rows */ 
+  
+  margin: auto; /* centers our google container */
+  margin-top: 150px; /* adds spacing from our nav bar */
+  width: 700px; /* master width - determines all elements within */
+
+  
+  padding: 10px;
+}
+
+    .grid-first-row {
+      grid-column: 1 / 5;
+      grid-row: 1;
+      
+    }
+
+    .grid-second-row-search-icon {
+      grid-column: 1;
+      grid-row: 2; 
+  
+      z-index: 2; /* Need otherwise search bar will cover icon */
+    }
+
+
+    .grid-second-row {
+      grid-column: 1 / 5;
+      grid-row: 2;
+      
+    }
+
+
+    .grid-third-row-firstbutton {
+      grid-column: 2 / 3;
+      grid-row: 3;
+      
+    }
+
+    .grid-third-row-secondbutton {
+      grid-column: 3 / 4;
+      grid-row: 3;
+
+    }
+
+    .grid-fourth-row {
+      grid-column: 2 / 4;
+      grid-row: 4;
+
+    }
+
+
+/* FIRST ROW CONTENTS */ 
+
+.google-logo {
+  width: 300px;
+  
+  display: block; /* to center our google logo */ 
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+
+/* SECOND ROW CONTENTS */ 
+.search-bar {
+  width: 80%;
+  height: 2.5rem;
+  padding: 0.25rem 4rem; /* top-bottom and left-right, to give space for icon */
+  
+  border: 1px solid #ced4da;
+  border-radius: 2rem;
+  
+  display: block; /* to center our search bar */ 
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+    .search-bar:hover {
+      filter: drop-shadow(4px 4px 5px #ced4da);
+    }
+
+
+  .search-icon {
+    display: block; 
+    margin-left: 20px; 
+    margin-top: 10px; 
+    z-index: 1; 
+  }
+
+
+/* THIRD ROW CONTENTS */ 
+.first-button {
+  width: 150px;
+  height: 40px;
+  background: #f8f9fa;
+  
+  border-radius: 2px;
+  border-style: none; 
+  cursor: pointer;
+  
+  display: block; /* to position our button */ 
+  margin-left: 20px;
+}
+
+      .first-button:hover {
+        border: 2px solid darkgrey;
+      }
+
+      .first-button:visited {
+        border: 2px solid #4285f4;
+      }
+
+.second-button {
+  width: 150px;
+  height: 40px;
+  background: #f8f9fa;
+  
+  border-radius: 2px;
+  border-style: none; 
+  cursor: pointer;
+  
+  display: block; /* to center our search bar */ 
+  margin-left: 5px;
+}
+
+    .second-button:hover {
+      border: 2px solid darkgrey;
+    }
+
+    .second-button:visited {
+        border: 2px solid #4285f4;
+    }
+
+
+
+.footer-flex-container {
+    display: flex;
+    flex-direction: space-between;
+    padding: 15px;
+    position: fixed;
+    width: 100%;
+    left: 0px;
+    bottom: 0px;
+    background-color: #f2f2f2;
+}
+.footer-flex-container a{
+    color: inherit;
+    text-decoration: none;
+}
+.footer-flex-child-1 {
+    flex-grow: 1; 
+    margin-left: 10px;  
+}
+.tray-flex-child-2 {
+    flex-grow: 1; 
+    margin-right: 30px;
+}
+.left-footer {
+    list-style-type: none;
+    margin: auto;
+    padding: 0;
+    text-align: left;
+}
+.right-tray {
+    list-style-type: none;
+    margin: auto;
+    padding: 0;
+    text-align: right;
+}
+.footer-flex-container li {
+    display: inline-block;
+    padding: 5px 10px;
+    margin: 0;
+    color: darkgray;
+    font-size: 14px;
+}
+.footer-flex-container li:hover {
+    text-decoration: underline;
+}

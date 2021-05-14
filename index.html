@@ -1,0 +1,78 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css" type="text/css">
+
+    <title>The Odin Project Google Homepage</title>
+    <meta name="description" content="The Odin Project - Google homepage">
+    <meta name="keywords" content="The Odin Project, Google homepage">
+    <meta name="author" contact="Woodstock">
+    <meta property='og: url' content='https://github.com/VictorHeGitHub/google-homepage'/>
+</head>
+<!-- nav bar "About" "Store" "Gmail" "Images" "Products icon image" "Sign in"-->
+
+<body>
+<header>
+    <div class="nav-flex-container">
+        <div class='nav-flex-child-1'>
+            <ul class="left-nav">
+                <li><a href="#">About</a></li>
+                <li><a href="#">Store</a></li>
+            </ul>
+        </div>      
+        <div class='nav-flex-child-2'>
+            <ul class="right-nav">
+                <li><a href="#">Gmail</a></li>
+                <li><a href="#">Images</a></li>
+                <img id="menu" src="data:image/png;base64,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" alt="google app menu">                   
+                <li><a href="#" id="Sign-In">Sign In</a></li>
+            </ul>
+    </div>    
+</header>    
+
+<main>
+    <div class="grid-box-container">
+        <div class="grid-first-row"> <!-- image google -->
+            <img class="google-logo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google logo">
+            <!-- search bar with input -->
+        </div>
+            <div class="grid-second-row-search-icon">
+                <!-- 
+                <img class="magnifying-glass-icon" src="https://cdn.icon-icons.com/icons2/2551/PNG/512/search_icon_152764.png" alt="magnifying glass">
+                -->
+            </div>
+            <div class="grid-second-row">  
+                <input class="search-bar" id="search-bar" type="text" autofocus> <!--Cursor automatically pulsing in Search Bar-->
+                </input>
+            </div>
+              <!-- 2 boxes with "Google Search" "I'm Feeling Lucky"-->
+            <div class="grid-third-row-firstbutton">
+                <input class="first-button" type="submit" value="Google Search">
+            </div>
+
+            <div class="grid-third-row-secondbutton">
+                <input class="second-button" type="submit" value="I'm Feeling Lucky">
+            </div>
+    </div> <!-- CLOSE GRID BOX-->
+    <!-- Left side with "Advertising" "Business" "How Search Works" links-->
+    <div class="footer-flex-container">
+        <div class='footer-flex-child-1'>
+            <ul class="left-footer">
+                <li><a href="#">Advertising</a></li>
+                <li><a href="#">Business</a></li>
+                <li><a href="#">How Search Works</a></li>
+            </ul>
+        </div>      
+    <!-- Right side "Privacy" "Terms" "Settings"-->    
+        <div class='footer-flex-child-2'>
+            <ul class="right-footer">
+                <li><a href="#">Privacy</a></li>
+                <li><a href="#">Terms</a></li>
+                <li><a href="#">Settings</a></li>
+            </ul>
+    </div>    
+</main>
+</body>
+</html>
